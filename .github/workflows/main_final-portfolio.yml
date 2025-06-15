@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - final-portfolio
+name: Build and deploy Node.js app to Azure Web App - ismael-zinsou
 # This workflow builds a Node.js application and deploys it to Azure Web App.
 
 # Run the workflow whenever change is pushed into the main branch
@@ -63,7 +63,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'final-portfolio' # Name of your Azure Web App
+          app-name: 'ismael-zinsou' # Name of your Azure Web App
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }} # Publish profile should always be stored as secrets in your repository Settings - Secrets and variables - Actions - secrets
           package: .
